@@ -22,7 +22,7 @@ let items = [
 
      new Quote("Ohio", "Me", undefined),
 
-     new Quote("6-7", "Me", undefined)
+     new Quote("Hello", "Me", undefined)
 
 ]
 
