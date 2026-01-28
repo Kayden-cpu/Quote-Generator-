@@ -2,13 +2,16 @@ import express from 'express';
 import cors from "cors"
 
 class Quote{
+     message: string
+     author: string
+     title: string | undefined
      /**
       * 
       * @param {string} message 
       * @param {string} author 
       * @param {string | undefined} title 
       */
-     constructor(message, author, title) {
+     constructor(message: string, author: string, title: string | undefined) {
           this.message = message
           this.author = author
           this.title = title
