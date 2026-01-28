@@ -16,13 +16,13 @@ class Quote{
 }
 
 let items = [
-     new Quote("Some message goes here", "Me", undefined),
+     new Quote("city boy", "Me", undefined),
 
-     new Quote("Some message goes here", "Me", undefined),
+     new Quote("Sigma", "Me", undefined),
 
-     new Quote("Some message goes here", "Me", undefined),
+     new Quote("Ohio", "Me", undefined),
 
-     new Quote("Some message goes here", "Me", undefined)
+     new Quote("6-7", "Me", undefined)
 
 ]
 
