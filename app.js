@@ -1,6 +1,31 @@
 import express from 'express';
 import cors from "cors"
 
+class Quote{
+     /**
+      * 
+      * @param {string} message 
+      * @param {string} author 
+      * @param {string | undefined} title 
+      */
+     constructor(message, author, title) {
+          this.message = message
+          this.author = author
+          this.title = title
+     }
+}
+
+let items = [
+     new Quote("Some message goes here", "Me", undefined),
+
+     new Quote("Some message goes here", "Me", undefined),
+
+     new Quote("Some message goes here", "Me", undefined),
+
+     new Quote("Some message goes here", "Me", undefined)
+
+]
+
 const app = express()
 
 app.use(cors())
@@ -10,10 +35,11 @@ app.get('/', (request, response) => {
 })
 
 app.get('/getDailyJoke', (request, response) => {
+     items [Math.floor(Math.random() * items.length - 1)]
      response.send({
-        title: "Our First Quote",
-        message: "Lorum Ipsum dolar emit",
-        author: "Me",
+        title: randomQuote.title,
+        message: randomQuote.message,
+        author: randomQuote.author,
      })
 })
 
