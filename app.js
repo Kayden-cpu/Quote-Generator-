@@ -35,7 +35,7 @@ app.get('/', (request, response) => {
 })
 
 app.get('/getDailyJoke', (request, response) => {
-     items [Math.floor(Math.random() * items.length - 1)]
+     let randomQuote = items[Math.floor(Math.random() * items.length - 1)]
      response.send({
         title: randomQuote.title,
         message: randomQuote.message,
